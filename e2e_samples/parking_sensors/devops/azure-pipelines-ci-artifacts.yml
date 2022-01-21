@@ -95,7 +95,7 @@ stages:
         ArtifactName: 'sql_dw_dacpac'
       displayName: 'Publish SQL DACPAC' 
     - task: PublishBuildArtifacts@1
-- task: PublishBuildArtifacts@1
+- task: PublishBuildArtifacts@2
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
